@@ -9,23 +9,268 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
+.header { /* ПАРАМЕТРЫ ЗАГОЛОВКА */
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
-}
+  display:flex;
+  position: relative;
+  align-items: center;
+  background-color: #f2f2f2}
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
+.logo { /* ЛОГОТИП ЯНДЕКС ПРАКТИКУМ */
+  width: 228px;
+  height: 32px}
+
+.logo_place_header { /* ПОЛОЖЕНИЕ ВЕРХНЕГО ЛОГОТИПА */
+  position: absolute;
+  left: 64px;
+  top: 30px}
+
+.header__title { /* ЗАГОЛОВОК ШАПКИ */
+  width: 730px;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600}
+
+.header__subtitle { /* ОПИСАНИЕ ШАПКИ */
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 1}
+
+.subtitle_link { /* ССЫЛКА ОПИСАНИЯ ШАПКИ */
+  text-decoration: none;
+  color: #2F80ed}
+
+.header__square-pic { /* ПОДЛОЖКА ДЛЯ КАРТИНКИ */
   height: 568px;
   width: 568px;
-}
+  background-color: #2F80ed;
+  position: absolute;
+  top: 64px;
+  right: 0}
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+.header__main_illistration { /* ИЗОБРАЖЕНИЕ КАРТИНЫ */
+  height: 608px;
+  width: 765px;
+  position: absolute;
+  bottom: 0;
+  right: 0}
+
+.description { /* ОПИСАНИЕ */
+  margin-top: 100px;
+  display: flex;
+  justify-content: center}
+
+.two-columns { /* БЛОК ОПИСАНИЯ */
+  width: 80%;
+  min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between}
+
+.two-columns__brief { /* ЛЕВАЯ КОЛОНКА */
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  color: #2F80ed}
+
+.two-colums__main-text { /* ПРАВАЯ КОЛОНКА */
+  width: 80%;
+  line-height: 34px;
+  font-size: 24px;
+  padding-bot:30px}
+
+.span-accent { /* ВЫВОД */
+  font-weight: 600}
+
+.digits { /* БЛОК ЦИФРЫ И ФАКТЫ */
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px}  
+
+.digits__section-title { /* ЗАГОЛОВОК ЦИФРЫ И ФАКТЫ */
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 100px auto 0;
+  text-align: center}
+
+.digits__section-sublitle { /* КОМЕННТАРИЙ ЗАГОЛОВКА */
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  margin: 30px auto 0;
+  text-align: center}
+
+.digits__table { /* ТАБЛИЦА БЛОКА DIGITAL */
+  width: 1100px;
+  margin: 0 auto 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between}
+
+.table__cell { /* ЯЧЕЙКА ТАБЛИЦЫ */
+  width: 250px;
+  margin-top: 60px}
+
+.table__heading { /* ЗАГОЛОВОК ЯЧЕЙКИ */
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600}
+
+.table__text { /* ТЕКСТ ЯЧЕЙКИ */
+  line-height: 1.2;
+  font-size: 18px;
+  margin-top: 20px}
+
+.feynman { /* БЛОК ФЕЙНМАН */
+  height: 790px; /* в брифе указанна высота 890. это ошибка? */
+  background-image: url("../images/feynman.png");
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  background-position: bottom left;
+  background-color: #f2f2f2;
+  position: relative;
+  padding-top: 100px} /*это костыль!!!*/
+
+
+.feynman__title { /* ЗАГОЛОВОК БЛОКА ФЕЙНМАН */
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px auto 70px} /*почему верхняя граница выходит за пределы родительского блока?*/
+
+.feynman__subtitle { /* ПОДЗАГОЛОВОК БЛОКА ФЕЙНМАН */
+  line-height: 51px;
+  font-size: 36px; 
+  text-align: center}
+
+.feynman__link { /* ССЫЛКА ПОДРОБНЕЕ */
+  line-height: 51px;
+  font-size: 36px; 
+  color: #2F80ed;
+  text-decoration: none;
+  position: absolute;
+  right: 48px;
+  top: 50%}
+
+.kaufman { /* БЛОК КАУФМАН */
+  background-color: #1f1f1f;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0}
+
+.kaufman__title_theme_dark { /* ЗАГОЛОВОК БЛОКА КАУФМАН */
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0px auto;
+  text-align: center;
+  color:white}
+
+.kaufman__subtitle_theme_dark { /* ПОДЗАГОЛОВОК БЛОКА КАУФМАН */
+  width: 60%;
+  line-height: 34px;
+  font-size: 34px;
+  text-align: center;
+  margin: 20px auto 0px;
+  color:white}
+
+.table_theme_dark { /* ТАБЛИЦА КАУФМАН */
+  width: 1100px;
+  margin: 0 auto 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between}
+
+.table__cell_theme_dark { /* ЯЧЕЙКА ТАМБИЦЫ КАУФМАН */
   width: 200px;
   color: white;
   margin-right: 0;
-  margin-top: 80px;
-}
+  margin-top: 80px}
+
+.table__heading_theme_dark { /* ЗАГОЛОВОК ЯЧЕЙКИ */
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600}
+
+.table__text_theme_dark { /* ТЕКСТ ЯЧЕЙКИ */
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px}
+
+.kaufman__triangle { /* ФИГУРА ФОНА ТАБЛИЦЫ */
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: -1}
+
+.footer { /* ПОДВАЛ */
+  background-color: #1f1f1f;
+  min-height: 350px
+  padding-top: 60px;
+  padding-bottom: 60px}
+
+.footer__columns { /* БЛОК ПОДВАЛА */
+  display: flex;
+  height: 250px;
+  width: 90%;
+  margin: 0px auto 0px;
+  justify-content: space-between}
+
+.footer__column_copyright { /* КОЛОНКА АВТОРА */
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between}
+
+.footer__author { /* АВТОР */
+  line-height: 25px;
+  font-size: 18px;
+  color: white;
+  margin: 18px 0px}
+
+.footer__column-heading_theme_dark { /* ЗАГОЛОВОК КОЛОНКИ */
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px}
+
+.footer__column-links { /* КОЛОНКА ССЫЛОК */
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column}
+
+.footer__column-link_theme_dark { /* СВОЙСТВА ССЫЛКИ */
+  line-height: 30px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none}
+
+.footer__column_social { /* КОЛОНКА СОЦСЕТЕЙ */
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column}
+
+.footer__social-icon { /* ПАРАМЕТРЫ ИКОНОК СОЦСЕТИ */
+width: 16px;
+height: 16px;
+margin-right: 10px}
