@@ -84,10 +84,20 @@
   color: #2F80ed}
 
 .two-colums__main-text { /* ПРАВАЯ КОЛОНКА */
-  width: 80%;
+  min-width: 784px;
+  width: 80%}
+
+.two-colums__paragraph { /* ТЕКСТ ПРАВОЙ КОЛОНКИ */
   line-height: 34px;
   font-size: 24px;
-  padding-bot:30px}
+  margin-top: 0;
+  margin-bottom: 30px}
+
+.two-colums__paragraph_last { /* НИЖНИЙ ТЕКСТ ПРАВОЙ КОЛОНКИ */
+  line-height: 34px;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0}
 
 .span-accent { /* ВЫВОД */
   font-weight: 600}
@@ -141,7 +151,7 @@
   background-position: bottom left;
   background-color: #f2f2f2;
   position: relative;
-  padding-top: 100px} /*это костыль!!!*/
+  padding-top: 100px} /*это костыль или норма???*/
 
 
 .feynman__title { /* ЗАГОЛОВОК БЛОКА ФЕЙНМАН */
@@ -193,7 +203,7 @@
 
 .table_theme_dark { /* ТАБЛИЦА КАУФМАН */
   width: 1100px;
-  margin: 0 auto 90px;
+  margin: 0 auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between}
@@ -224,15 +234,15 @@
 
 .footer { /* ПОДВАЛ */
   background-color: #1f1f1f;
-  min-height: 350px
+  max-height: 350px;
   padding-top: 60px;
-  padding-bottom: 60px}
+  padding-bottom: 40px}
 
 .footer__columns { /* БЛОК ПОДВАЛА */
   display: flex;
   height: 250px;
   width: 90%;
-  margin: 0px auto 0px;
+  margin: 0 auto 0;
   justify-content: space-between}
 
 .footer__column_copyright { /* КОЛОНКА АВТОРА */
