@@ -64,7 +64,7 @@
 
 /* ССЫЛКА ОПИСАНИЯ ШАПКИ */
 
-.subtitle__link {
+.header__link {
   text-decoration: none;
   color: #2F80ed;
 }
@@ -116,16 +116,20 @@
 
 /* ЛЕВАЯ КОЛОНКА */
 
-.brief {
+.two-columns__brief {
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
   color: #2F80ed;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
 }
 
 /* ПРАВАЯ КОЛОНКА */
 
-.main-text {
+.two-columns__main-text {
   min-width: 784px;
   width: 80%;
   line-height: 34px;
@@ -137,13 +141,15 @@
 
 /* ТЕКСТ ПРАВОЙ КОЛОНКИ */
 
-.paragraph {
+.two-columns__paragraph {
+  padding: 0;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
 /* НИЖНИЙ ТЕКСТ ПРАВОЙ КОЛОНКИ */
 
-.paragraph:last-child {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
@@ -173,7 +179,7 @@
 
 /* КОМЕННТАРИЙ ЗАГОЛОВКА */
 
-.section-sublitle {
+.section-subtitle {
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -193,22 +199,24 @@
 
 /* ЯЧЕЙКА ТАБЛИЦЫ */
 
-.cell {
+.table__cell {
   width: 250px;
   margin-top: 60px;
 }
 
 /* ЗАГОЛОВОК ЯЧЕЙКИ */
 
-.heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* ТЕКСТ ЯЧЕЙКИ */
 
-.text {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   margin-top: 20px;
@@ -230,18 +238,18 @@
 
 /* ЗАГОЛОВОК БЛОКА ФЕЙНМАН */
 
-.title {
+.feynman__title {
   max-width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
   text-align: center;
-  margin: 0px auto 70px; /*почему верхняя граница выходит за пределы родительского блока?*/
+  margin: 0px auto 70px;
 }
 
 /* ПОДЗАГОЛОВОК БЛОКА ФЕЙНМАН */
 
-.subtitle {
+.feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   text-align: center;
@@ -272,26 +280,16 @@
   z-index: 0;
 }
 
-/* ЗАГОЛОВОК БЛОКА КАУФМАН */
+/* МОДИФИКАТОР ЗАГОЛОВОКА БЛОКА КАУФМАН */
 
-.section__title {
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  margin: 0px auto;
-  text-align: center;
+.section-title_theme_dark {
+  margin: 0 auto 0;
   color: white;
 }
 
-/* ПОДЗАГОЛОВОК БЛОКА КАУФМАН */
+/* МОДИФИКАТОР ПОДЗАГОЛОВОКА БЛОКА КАУФМАН */
 
-.section__subtitle {
-  width: 60%;
-  line-height: 34px;
-  font-size: 34px;
-  text-align: center;
-  margin: 20px auto 0px;
+.section-subtitle_theme_dark {
   color: white;
 }
 
@@ -305,30 +303,23 @@
   justify-content: space-between;
 }
 
-/* ЯЧЕЙКА ТАБЛИЦЫ КАУФМАН */
+/* МОДИФИКАТОР ЯЧЕЙКИ ТАБЛИЦЫ КАУФМАН */
 
-.cell_theme_dark {
+.table__cell_theme_dark {
   width: 200px;
   margin-right: 0;
   margin-top: 80px;
 }
 
-/* ЗАГОЛОВОК ЯЧЕЙКИ */
+/* МОДИФИКАТОР ЗАГОЛОВКА ЯЧЕЙКИ */
 
-.heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
+.table__heading_theme_dark {
   color: white;
 }
 
-/* ТЕКСТ ЯЧЕЙКИ */
+/* МОДИФИКАТОР ТЕКСТА ЯЧЕЙКИ */
 
-.text_theme_dark {
-  margin-top: 20px;
-  margin-bottom: 0;
-  line-height: 1.2;
-  font-size: 18px;
+.table__text_theme_dark {
   color: white;
 }
 
@@ -366,6 +357,13 @@
   margin-bottom: 0;
 }
 
+/* КОЛОНКИ ПОДВАЛА */
+
+.footer__column {
+  color: white;
+  font-size: 18px;
+}
+
 /* КОЛОНКА АВТОРА */
 
 .footer__column_content-copyright {
@@ -379,8 +377,6 @@
 
 .footer__author {
   line-height: 25px;
-  font-size: 18px;
-  color: white;
   margin: 18px 0px;
 }
 
@@ -388,9 +384,7 @@
 
 .footer__column-heading {
   line-height: 30px;
-  font-size: 18px;
   font-weight: 600;
-  color: white;
   margin-bottom: 20px;
   margin-top: 0;
 }
@@ -410,8 +404,6 @@
 
 .footer__column-link {
   line-height: 30px;
-  font-size: 18px;
-  color: white;
   text-decoration: none;
 }
 
